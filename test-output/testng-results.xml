@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Text entered as ::pradeepit16@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Text entered as ::janamanagana]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked//input[@value='Log In']]]>
+    </line>
+    <line>
+      <![CDATA[testcase Passed]]>
+    </line>
+    <line>
+      <![CDATA[Testcase ends]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10430" started-at="2017-06-18T02:18:27Z" finished-at="2017-06-18T02:18:37Z">
+    <groups>
+    </groups>
+    <test name="RegressionTest" duration-ms="10430" started-at="2017-06-18T02:18:27Z" finished-at="2017-06-18T02:18:37Z">
+      <class name="test.HomePageTestcase">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2017-06-18T07:48:27Z" finished-at="2017-06-18T07:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="appLogin(java.lang.String)[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="appLogin" is-config="true" duration-ms="10177" started-at="2017-06-18T07:48:27Z" finished-at="2017-06-18T07:48:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Text entered as ::pradeepit16@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[Text entered as ::janamanagana]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked//input[@value='Log In']]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- appLogin -->
+        <test-method status="PASS" signature="clickFriend()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="clickFriend" duration-ms="7" started-at="2017-06-18T07:48:37Z" finished-at="2017-06-18T07:48:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickFriend -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="verifyHomePageTitle" duration-ms="78" started-at="2017-06-18T07:48:37Z" finished-at="2017-06-18T07:48:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testcase Passed]]>
+            </line>
+            <line>
+              <![CDATA[Testcase ends]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="appQuit()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="appQuit" is-config="true" duration-ms="132" started-at="2017-06-18T07:48:37Z" finished-at="2017-06-18T07:48:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appQuit -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="AfterSuite" is-config="true" duration-ms="0" started-at="2017-06-18T07:48:37Z" finished-at="2017-06-18T07:48:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- test.HomePageTestcase -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- Suite -->
+</testng-results>
