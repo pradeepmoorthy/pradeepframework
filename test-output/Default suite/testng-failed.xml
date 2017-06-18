@@ -11,8 +11,8 @@
       <class name="test.HomePageTestcase">
         <methods>
           <include name="beforeSuite"/>
-          <include name="clickFriend"/>
           <include name="verifyHomePageTitle"/>
+          <include name="verifySearchFunctionality"/>
         </methods>
       </class> <!-- test.HomePageTestcase -->
     </classes>

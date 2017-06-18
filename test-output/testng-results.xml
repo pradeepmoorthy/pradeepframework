@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Text entered as ::pradeepit16@gmail.com]]>
@@ -11,22 +11,34 @@
       <![CDATA[Element clicked//input[@value='Log In']]]>
     </line>
     <line>
-      <![CDATA[testcase Passed]]>
+      <![CDATA[Testcase failed]]>
     </line>
     <line>
-      <![CDATA[Testcase ends]]>
+      <![CDATA[Text entered as ::selenium]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked(//button[@type='submit'])[1]]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked(//div[@class='_5dw9 _5dwa _4-u3']/span[2]/a)[1]]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked(//div[@class='_4bl9'])[9]]]>
+    </line>
+    <line>
+      <![CDATA[Element clicked_50f4]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="10430" started-at="2017-06-18T02:18:27Z" finished-at="2017-06-18T02:18:37Z">
+  <suite name="Suite" duration-ms="70249" started-at="2017-06-18T07:35:20Z" finished-at="2017-06-18T07:36:30Z">
     <groups>
     </groups>
-    <test name="RegressionTest" duration-ms="10430" started-at="2017-06-18T02:18:27Z" finished-at="2017-06-18T02:18:37Z">
+    <test name="RegressionTest" duration-ms="70249" started-at="2017-06-18T07:35:20Z" finished-at="2017-06-18T07:36:30Z">
       <class name="test.HomePageTestcase">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2017-06-18T07:48:27Z" finished-at="2017-06-18T07:48:27Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test.HomePageTestcase@30a502]" name="beforeSuite" is-config="true" duration-ms="12" started-at="2017-06-18T13:05:20Z" finished-at="2017-06-18T13:05:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="appLogin(java.lang.String)[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="appLogin" is-config="true" duration-ms="10177" started-at="2017-06-18T07:48:27Z" finished-at="2017-06-18T07:48:37Z">
+        <test-method status="PASS" signature="appLogin(java.lang.String)[pri:0, instance:test.HomePageTestcase@30a502]" name="appLogin" is-config="true" duration-ms="24374" started-at="2017-06-18T13:05:20Z" finished-at="2017-06-18T13:05:44Z">
           <params>
             <param index="0">
               <value>
@@ -46,25 +58,136 @@
             </line>
           </reporter-output>
         </test-method> <!-- appLogin -->
-        <test-method status="PASS" signature="clickFriend()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="clickFriend" duration-ms="7" started-at="2017-06-18T07:48:37Z" finished-at="2017-06-18T07:48:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickFriend -->
-        <test-method status="PASS" signature="verifyHomePageTitle()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="verifyHomePageTitle" duration-ms="78" started-at="2017-06-18T07:48:37Z" finished-at="2017-06-18T07:48:37Z">
+        <test-method status="FAIL" signature="verifyHomePageTitle()[pri:0, instance:test.HomePageTestcase@30a502]" name="verifyHomePageTitle" duration-ms="32" started-at="2017-06-18T13:05:44Z" finished-at="2017-06-18T13:05:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at test.HomePageTestcase.verifyHomePageTitle(HomePageTestcase.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[testcase Passed]]>
-            </line>
-            <line>
-              <![CDATA[Testcase ends]]>
+              <![CDATA[Testcase failed]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method status="PASS" signature="appQuit()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="appQuit" is-config="true" duration-ms="132" started-at="2017-06-18T07:48:37Z" finished-at="2017-06-18T07:48:37Z">
+        <test-method status="FAIL" signature="verifySearchFunctionality()[pri:0, instance:test.HomePageTestcase@30a502]" name="verifySearchFunctionality" duration-ms="45819" started-at="2017-06-18T13:05:44Z" finished-at="2017-06-18T13:06:30Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Selenium Webdriver']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'b526bd5', time: '2017-03-07 11:11:07 -0800'
+System info: host: 'PRADEEP', ip: '192.168.43.159', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Pradeep8\AppData\Local\Temp\scoped_dir18108_29703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: b32919f9b84c9d97ea70cb3501c071ad
+*** Element info: {Using=xpath, value=//a[text()='Selenium Webdriver']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Selenium Webdriver']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'b526bd5', time: '2017-03-07 11:11:07 -0800'
+System info: host: 'PRADEEP', ip: '192.168.43.159', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Pradeep8\AppData\Local\Temp\scoped_dir18108_29703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: b32919f9b84c9d97ea70cb3501c071ad
+*** Element info: {Using=xpath, value=//a[text()='Selenium Webdriver']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at common.WebdriverGenarics.getElement(WebdriverGenarics.java:67)
+	at common.WebdriverGenarics.moveToElementAndClick(WebdriverGenarics.java:290)
+	at test.HomePageTestcase.verifySearchFunctionality(HomePageTestcase.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Text entered as ::selenium]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked(//button[@type='submit'])[1]]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked(//div[@class='_5dw9 _5dwa _4-u3']/span[2]/a)[1]]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked(//div[@class='_4bl9'])[9]]]>
+            </line>
+            <line>
+              <![CDATA[Element clicked_50f4]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- appQuit -->
-        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:test.HomePageTestcase@1e4cb85]" name="AfterSuite" is-config="true" duration-ms="0" started-at="2017-06-18T07:48:37Z" finished-at="2017-06-18T07:48:37Z">
+        </test-method> <!-- verifySearchFunctionality -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:test.HomePageTestcase@30a502]" name="AfterSuite" is-config="true" duration-ms="0" started-at="2017-06-18T13:06:30Z" finished-at="2017-06-18T13:06:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->

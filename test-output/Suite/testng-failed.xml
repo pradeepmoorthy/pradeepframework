@@ -8,4 +8,18 @@
       <class name="test.HomePageTestcase"/>
     </classes>
   </test> <!-- RegressionTest -->
+  <test name="RegressionTest(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="test.HomePageTestcase">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="verifySearchFunctionality"/>
+          <include name="appLogin"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- test.HomePageTestcase -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
