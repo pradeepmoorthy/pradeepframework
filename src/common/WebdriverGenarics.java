@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -21,13 +20,16 @@ import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 
 public class WebdriverGenarics 
 {
-
+	/*
+	 * Created By bala
+	 * */
+	
 	public WebDriver launchBrowser(WebDriver driver , String BrowserName, String URL)
 	{
 		switch (BrowserName.toUpperCase())
 		{
 		case "IE":
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/drivers/IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"/drivers/ie.exe");
 			driver= new InternetExplorerDriver();
 			break;
 
@@ -37,7 +39,7 @@ public class WebdriverGenarics
 			break;
 
 		case "FIREFOX":
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/drivers/geckodriver.exe");
+			System.setProperty("webdriver.greko.driver", System.getProperty("user.dir")+"/drivers/greko.exe");
 			driver= new FirefoxDriver();
 			break;
 
@@ -341,7 +343,7 @@ public class WebdriverGenarics
 		driver.manage().window().setSize(new Dimension(width, height));
 	}
 	
-	
+
 	/*entertext = 8methods
 	 * click =8 method
 	 * framebyIndex

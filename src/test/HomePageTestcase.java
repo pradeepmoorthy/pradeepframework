@@ -1,108 +1,66 @@
 package test;
-
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import common.PrintUtils;
+import common.PropertiesFile;
 import testRunner.BaseRunner;
+
 
 public class HomePageTestcase extends BaseRunner 
 
-{
-
-	@Test
+{	
+	PropertiesFile prop= null;
+	@BeforeClass
+	public void beforeClass()
+	{
+		prop= new PropertiesFile("HomePage.properties");
+	}
+	
+	@Test(enabled=true, priority=1)
 	public void verifyHomePageTitle()
 	{
-		//PrintUtils.logMessage("Inside ForgetPassword testcase");
-		//webdriverGenarics.click(driver, "id","12344");
-		System.out.println(webdriverGenarics.getTitle(driver));
-		if(webdriverGenarics.getTitle(driver).equals("Facebook"))
-
-			//	  if(10==12)
-				  {
-					  PrintUtils.logMessage("testcase Passed");
-				  }else
-				  {
-					  PrintUtils.logError("Testcase failed");
-					  Assert.fail();
-				  }
-
-			PrintUtils.logMessage("Testcase ends");
-
-	}
-	
-	@Test(enabled=false)
-	public void verifyFriendPageTitle()
-	{
-		PrintUtils.logMessage("Inside verifyFriendPageTitle testcase");
+		PrintUtils.logMessage("To verify Home page");
+		//click Profile Link
+		webdriverGenarics.click(driver, "xpath", prop.getProp("HomeLink"));
 		
-		if(webdriverGenarics.getTitle(driver).equals("forgetLinke"))
-
-			//	  if(10==12)
-				  {
-					  PrintUtils.logMessage("testcase Passed");
-				  }else
-				  {
-					  PrintUtils.logError("Testcase failed");
-					  Assert.fail();
-				  }
-
-			PrintUtils.logMessage("Testcase ends");
-
-	}
-	
-	/**
-	 * @throws InterruptedException 
-	 * 
-	 */
-	@Test
-	public void verifySearchFunctionality() throws InterruptedException
-	{
-	
-	      webdriverGenarics.enterText(driver, "xpath", "//input[@class='_1frb']", "selenium");
-	      webdriverGenarics.click(driver, "xpath", "(//button[@type='submit'])[1]");
-	      
-	      //click see all
-	      
-	      webdriverGenarics.click(driver, "xpath", "(//div[@class='_5dw9 _5dwa _4-u3']/span[2]/a)[1]");
-	      
-	      // list of webelements
-	      List<WebElement> lists = driver.findElements(By.xpath("//div[@class='_52eh _5bcu']"));
-	      System.out.println(lists.size());
-	      for (WebElement Element : lists) 
-	      {
-	    	  String ActualValue=Element.getText();
-	    	  if(ActualValue.equals("Share Selenium"))
-	    	  {
-	    		  Element.click();
-	    		  break;
-	    	  }
+		//Validation
+		String currentURL = webdriverGenarics.getCurrentURL(driver);
+		if(currentURL.contains("https://www.facebook.com/"))
+		{
+			PrintUtils.logMessage("Home page Navigated successfully");
+			sa.assertTrue(true);
+		}else
+		{
+			PrintUtils.logError("Home Page not navigated sussfully");
+			sa.assertFalse(false);
 		}
-	      
-	      webdriverGenarics.click(driver, "xpath", "(//div[@class='_4bl9'])[9]");
-	      
-	      webdriverGenarics.click(driver, "classname", "_50f4");
-	      
-	      //webdriverGenarics.switchToParentWindow(driver, "Parentwindow");
-	      //System.out.println("Parentwindow");
-	      //Thread.sleep(1000);
-	      //webdriverGenarics.moveToElementAndClick(driver, "xpath", "//a[text()='Selenium Webdriver']");
-	      
-	      String Title=webdriverGenarics.getTitle(driver);
-	      
-	      if(Title.equals("Share Selenium - Home"))
-	      {
-	    	  System.out.println("Title is :" + Title);
-	    	webdriverGenarics.back(driver);
-	      }
+		
+		// End testcase
+		sa.assertAll();
 	}
 	
-	
-	
-	
+	@Test(enabled=false, priority=2)
+	public void verifyLogoutFunctionality()
+	{
+		PrintUtils.logMessage("To verify Logout functionality");
+		
+		webdriverGenarics.click(driver, "id",prop.getProp("LogoutNavigationLink"));
+		
+		webdriverGenarics.moveToElementAndClick(driver, "", prop.getProp("Logout"));
+		
+		//Validation
+		String pageTitle = webdriverGenarics.getParentWindow(driver);
+		if(pageTitle.equals("LoginPage"))
+		{
+			PrintUtils.logMessage("Login page title  mached");
+			sa.assertTrue(true);
+		}else
+		{
+			PrintUtils.logError("Login page title not mached");
+			sa.assertFalse(false);
+		}
+		
+		// End testcase
+		sa.assertAll();
+	}
 }

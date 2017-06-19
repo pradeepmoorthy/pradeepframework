@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RegressionTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 18 13:05:20 IST 2017</td>
+<td>Started on:</td><td>Sun Jun 18 16:35:13 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>70 seconds (70249 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36148 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,20 +76,50 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.HomePageTestcase.verifyHomePageTitle()'><b>verifyHomePageTitle</b><br>Test class: test.HomePageTestcase<br/>
-<a href="#Output-4526910" onClick='toggleBox("Output-4526910", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-29780195" onClick='toggleBox("Output-29780195", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-4526910" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-4526910">
-Testcase failed<br/>
+<a href="#Output-29780195" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29780195">
+To verify Home page<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: null
-	at test.HomePageTestcase.verifyHomePageTitle(HomePageTestcase.java:32)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4526910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace4526910'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.fail(Assert.java:101)
-	at test.HomePageTestcase.verifyHomePageTitle(HomePageTestcase.java:32)
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;_2s25&quot; data-gt=&quot;{&amp;quot;chrome_nav_item&amp;quot;:&amp;quot;home_chrome&amp;quot;}&quot; href=&quot;https://www.facebook.com/?ref=tn_tnmn&quot; accesskey=&quot;1&quot; id=&quot;u_0_5&quot;&gt;...&lt;/a&gt; is not clickable at point (794, 21). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 355 milliseconds
+Build info: version: &apos;unknown&apos;, revision: &apos;b526bd5&apos;, time: &apos;2017-03-07 11:11:07 -0800&apos;
+System info: host: &apos;PRADEEP&apos;, ip: &apos;192.168.43.159&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Pradeep8\AppData\Local\Temp\scoped_dir12516_19869}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 4d04c41d166fbcc261f4ef45d38339ea
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at common.WebdriverGenarics.click(WebdriverGenarics.java:107)
+	at test.HomePageTestcase.verifyHomePageTitle(HomePageTestcase.java:24)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29780195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29780195'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;_2s25&quot; data-gt=&quot;{&amp;quot;chrome_nav_item&amp;quot;:&amp;quot;home_chrome&amp;quot;}&quot; href=&quot;https://www.facebook.com/?ref=tn_tnmn&quot; accesskey=&quot;1&quot; id=&quot;u_0_5&quot;&gt;...&lt;/a&gt; is not clickable at point (794, 21). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 355 milliseconds
+Build info: version: &apos;unknown&apos;, revision: &apos;b526bd5&apos;, time: &apos;2017-03-07 11:11:07 -0800&apos;
+System info: host: &apos;PRADEEP&apos;, ip: &apos;192.168.43.159&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Pradeep8\AppData\Local\Temp\scoped_dir12516_19869}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 4d04c41d166fbcc261f4ef45d38339ea
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at common.WebdriverGenarics.click(WebdriverGenarics.java:107)
+	at test.HomePageTestcase.verifyHomePageTitle(HomePageTestcase.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -116,94 +146,7 @@ Testcase failed<br/>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
 </pre></div></td>
 <td>0</td>
-<td>test.HomePageTestcase@30a502</td></tr>
-<tr>
-<td title='test.HomePageTestcase.verifySearchFunctionality()'><b>verifySearchFunctionality</b><br>Test class: test.HomePageTestcase<br/>
-<a href="#Output-1205355" onClick='toggleBox("Output-1205355", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1205355" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1205355">
-Text entered as ::selenium<br/>
-Element clicked(//button[@type='submit'])[1]<br/>
-Element clicked(//div[@class='_5dw9 _5dwa _4-u3']/span[2]/a)[1]<br/>
-Element clicked(//div[@class='_4bl9'])[9]<br/>
-Element clicked_50f4<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Selenium Webdriver&apos;]&quot;}
-  (Session info: chrome=58.0.3029.110)
-  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;unknown&apos;, revision: &apos;b526bd5&apos;, time: &apos;2017-03-07 11:11:07 -0800&apos;
-System info: host: &apos;PRADEEP&apos;, ip: &apos;192.168.43.159&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Pradeep8\AppData\Local\Temp\scoped_dir18108_29703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: b32919f9b84c9d97ea70cb3501c071ad
-*** Element info: {Using=xpath, value=//a[text()=&apos;Selenium Webdriver&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at common.WebdriverGenarics.getElement(WebdriverGenarics.java:67)
-	at common.WebdriverGenarics.moveToElementAndClick(WebdriverGenarics.java:290)
-	at test.HomePageTestcase.verifySearchFunctionality(HomePageTestcase.java:94)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1205355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1205355'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Selenium Webdriver&apos;]&quot;}
-  (Session info: chrome=58.0.3029.110)
-  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;unknown&apos;, revision: &apos;b526bd5&apos;, time: &apos;2017-03-07 11:11:07 -0800&apos;
-System info: host: &apos;PRADEEP&apos;, ip: &apos;192.168.43.159&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Pradeep8\AppData\Local\Temp\scoped_dir18108_29703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: b32919f9b84c9d97ea70cb3501c071ad
-*** Element info: {Using=xpath, value=//a[text()=&apos;Selenium Webdriver&apos;]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at common.WebdriverGenarics.getElement(WebdriverGenarics.java:67)
-	at common.WebdriverGenarics.moveToElementAndClick(WebdriverGenarics.java:290)
-	at test.HomePageTestcase.verifySearchFunctionality(HomePageTestcase.java:94)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
-<td>45</td>
-<td>test.HomePageTestcase@30a502</td></tr>
+<td>test.HomePageTestcase@c3fd8b</td></tr>
 </table><p>
 </body>
 </html>

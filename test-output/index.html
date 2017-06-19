@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.HomePageTestcase" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.HomePageTestcase" hash-for-method="verifySearchFunctionality">verifySearchFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -133,38 +128,22 @@
                   <a name="verifyHomePageTitle">
                   </a> <!-- verifyHomePageTitle -->
                   <span class="method-name">verifyHomePageTitle</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at test.HomePageTestcase.verifyHomePageTitle(HomePageTestcase.java:32)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchFunctionality">
-                  </a> <!-- verifySearchFunctionality -->
-                  <span class="method-name">verifySearchFunctionality</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Selenium Webdriver&apos;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;a class=&quot;_2s25&quot; data-gt=&quot;{&amp;quot;chrome_nav_item&amp;quot;:&amp;quot;home_chrome&amp;quot;}&quot; href=&quot;https://www.facebook.com/?ref=tn_tnmn&quot; accesskey=&quot;1&quot; id=&quot;u_0_5&quot;&gt;...&lt;/a&gt; is not clickable at point (794, 21). Other element would receive the click: &lt;div class=&quot;_3ixn&quot;&gt;&lt;/div&gt;
   (Session info: chrome=58.0.3029.110)
   (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 6.3.9600 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30.04 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Command duration or timeout: 355 milliseconds
 Build info: version: &apos;unknown&apos;, revision: &apos;b526bd5&apos;, time: &apos;2017-03-07 11:11:07 -0800&apos;
 System info: host: &apos;PRADEEP&apos;, ip: &apos;192.168.43.159&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Pradeep8\AppData\Local\Temp\scoped_dir18108_29703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
-Session ID: b32919f9b84c9d97ea70cb3501c071ad
-*** Element info: {Using=xpath, value=//a[text()=&apos;Selenium Webdriver&apos;]}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.28.455520 (cc17746adff54984afff480136733114c6b3704b), userDataDir=C:\Users\Pradeep8\AppData\Local\Temp\scoped_dir12516_19869}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 4d04c41d166fbcc261f4ef45d38339ea
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:476)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at common.WebdriverGenarics.getElement(WebdriverGenarics.java:67)
-	at common.WebdriverGenarics.moveToElementAndClick(WebdriverGenarics.java:290)
-	at test.HomePageTestcase.verifySearchFunctionality(HomePageTestcase.java:94)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at common.WebdriverGenarics.click(WebdriverGenarics.java:107)
+	at test.HomePageTestcase.verifyHomePageTitle(HomePageTestcase.java:24)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -192,9 +171,12 @@ Session ID: b32919f9b84c9d97ea70cb3501c071ad
     &lt;classes&gt;
       &lt;class name=&quot;test.HomePageTestcase&quot;&gt;
         &lt;methods&gt;
+          &lt;include name=&quot;afterMethod&quot;/&gt;
+          &lt;include name=&quot;beforeClass&quot;/&gt;
           &lt;include name=&quot;beforeSuite&quot;/&gt;
+          &lt;include name=&quot;appQuit&quot;/&gt;
           &lt;include name=&quot;verifyHomePageTitle&quot;/&gt;
-          &lt;include name=&quot;verifySearchFunctionality&quot;/&gt;
+          &lt;include name=&quot;beforeMethod&quot;/&gt;
           &lt;include name=&quot;appLogin&quot;/&gt;
           &lt;include name=&quot;AfterSuite&quot;/&gt;
         &lt;/methods&gt;
@@ -241,20 +223,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySearchFunctionality')
+data.setCell(0, 1, 'verifyHomePageTitle')
 data.setCell(0, 2, 'test.HomePageTestcase')
-data.setCell(0, 3, 45819);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyHomePageTitle')
-data.setCell(1, 2, 'test.HomePageTestcase')
-data.setCell(1, 3, 32);
+data.setCell(0, 3, 429);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 429 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -266,19 +244,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifySearchFunctionality</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Text entered as ::selenium</span>
-                <span class="reporter-method-output">Element clicked(//button[@type='submit'])[1]</span>
-                <span class="reporter-method-output">Element clicked(//div[@class='_5dw9 _5dwa _4-u3']/span[2]/a)[1]</span>
-                <span class="reporter-method-output">Element clicked(//div[@class='_4bl9'])[9]</span>
-                <span class="reporter-method-output">Element clicked_50f4</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">verifyHomePageTitle</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testcase failed</span>
+                <span class="reporter-method-output">To verify Home page</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,7 +259,7 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">test.HomePageTestcase</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyFriendPageTitle</span>
+                <span class="ignored-method-name">verifyLogoutFunctionality</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -310,23 +278,33 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">appLogin(Chrome)</span>
-                <span class="method-start">12 ms</span>
+                <span class="method-start">31 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">29322 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">29329 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyHomePageTitle</span>
-                <span class="method-start">24398 ms</span>
+                <span class="method-start">29334 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifySearchFunctionality</span>
-                <span class="method-start">24434 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">29773 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">appQuit</span>
+                <span class="method-start">33862 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">AfterSuite</span>
-                <span class="method-start">70317 ms</span>
+                <span class="method-start">36370 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
